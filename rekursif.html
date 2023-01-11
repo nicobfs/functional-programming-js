@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekursif</title>
+</head>
+<body>
+    <script>
+       /*
+       Rekursif merupakan teknik pada sebuah function yang memangggil dirinya sendiri.
+       
+       const countDown = start => {
+  do {
+    console.log(start);
+    start -=1;
+  }
+  while(start > 0);
+};
+ 
+countDown(10);
+*/
+
+//Bentuk rekursinya :
+const countDown = start => {
+  console.log(start);
+  if(start > 0) countDown(start-1);
+};
+
+countDown(10);
+
+    </script>
+</body>
+</html>

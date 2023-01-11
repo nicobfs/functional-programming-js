@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Reduce</title>
+</head>
+<body>
+    <script>
+        /*
+        array.reduce() adalah fungsi bawaan dari data yang bertipe array 
+        yang digunakan untuk mengeksekusi fungsi reducer pada setiap elemen array 
+        dan hanya mengembalikan output satu nilai saja.
+        */
+        const students = [
+  {
+    name: 'Harry',
+    score: 60,
+  },
+  {
+    name: 'James',
+    score: 88,
+  },
+  {
+    name: 'Ron',
+    score: 90,
+  },
+  {
+    name: 'Bethy',
+    score: 75,
+  }
+];
+
+const totalScore = students.reduce((acc, student) => acc + student.score, 0);
+
+console.log(totalScore);
+
+/**
+ * output:
+ * 313
+ * 
+ */
+    </script>
+</body>
+</html>

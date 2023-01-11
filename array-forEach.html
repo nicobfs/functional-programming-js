@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array forEach</title>
+</head>
+<body>
+    <script>
+        /*
+        Array forEach merupakan fungsi bawaan dari array yang berfungsi untuk 
+        memanggil fungsi callback pada setiap iterasi index array.
+        fungsi ini tidak mengembalikan nilai apa pun.
+        hanya berfungsi untuk memanggil fungsi callback-nya saja, tak lebih dari itu.
+        */
+
+        //imperatif
+        const names = ['Harry', 'Ron', 'Jeff', 'Thomas'];
+ 
+for(let i = 0; i < names.length; i++) {
+  console.log(`Hello, ${names[i]}!`);
+}
+ 
+/**
+ * output:
+ * Hello, Harry!
+ * Hello, Ron!
+ * Hello, Jeff!
+ * Hello, Thomas!
+ * 
+ */
+        //deklaratif
+ const names = ['Harr', 'Ro', 'Jef', 'Thoma'];
+ 
+names.forEach((name) => {
+  console.log(`Hello, ${name}!`);
+});
+ 
+/**
+ * output:
+ * Hello, Harr!
+ * Hello, Ro!
+ * Hello, Jef!
+ * Hello, Thoma!
+ * 
+ */
+
+    </script>
+</body>
+</html>
